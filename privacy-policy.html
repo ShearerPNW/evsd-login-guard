@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EVSD Login Guard — Privacy Policy</title>
+<style>
+  body { font-family: Arial, Helvetica, sans-serif; max-width: 700px; margin: 40px auto; line-height: 1.6; color: #222; padding: 0 16px; }
+  h1 { font-size: 22px; }
+  h2 { font-size: 18px; margin-top: 32px; }
+</style>
+</head>
+<body>
+  <h1>EVSD Login Guard — Privacy Policy</h1>
+  <p><em>Last updated: 2026</em></p>
+
+  <p>EVSD Login Guard is a browser extension built by East Valley School District IT to warn
+  staff and students when a password field appears on a page that is not a recognized
+  district, Google, or Microsoft sign-in domain, in order to prevent credential theft from
+  phishing pages.</p>
+
+  <h2>What this extension does</h2>
+  <p>The extension's content script runs on web pages to check for the presence of a password
+  field. If one is found, it checks the page's hostname and the visible text near the password
+  field against a list of known-safe domains and district brand keywords. If the page does not
+  match, a warning banner is shown to the user.</p>
+
+  <h2>What data is accessed</h2>
+  <ul>
+    <li><strong>Website content:</strong> The extension reads visible text near a detected
+    password field (to check for district branding/instructions) and checks the page's
+    hostname. This happens entirely within the user's browser.</li>
+    <li><strong>Password fields:</strong> The extension only checks whether a password-type
+    input exists on the page. It never reads, stores, or transmits the actual value typed into
+    any field.</li>
+  </ul>
+
+  <h2>What data is NOT collected</h2>
+  <p>This extension does not collect, store, or transmit personally identifiable information,
+  health information, financial information, authentication credentials, personal
+  communications, location data, browsing/web history, or user activity (clicks, keystrokes,
+  etc.). All processing happens locally in the browser and is never sent anywhere — this
+  extension has no server component and makes no network requests.</p>
+
+  <h2>Storage</h2>
+  <p>The extension reads a configuration (an allow-list of safe domains and keywords) that is
+  pushed by East Valley School District IT via Chrome enterprise policy
+  (<code>chrome.storage.managed</code>). No user data is written to this storage.</p>
+
+  <h2>Data sharing</h2>
+  <p>This extension does not sell, share, or transfer any data to third parties. It has no
+  analytics, advertising, or tracking components of any kind.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this extension or policy can be directed to East Valley School District IT.</p>
+</body>
+</html>
